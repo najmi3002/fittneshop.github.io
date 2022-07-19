@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FITNESS SHOP</title>
+</head>
+<style>
+body{
+    background-image: url(fit1.jpg);
+    background-size: cover;
+    background-position:center;
+    height:100vh;
+}
+.banner-text{
+    text-align: center;
+    padding-top: 8px;
+}
+.banner-text h1{
+    font-size: 130px;
+    color: rgb(0, 0, 0);
+    font-style: monospace;
+}
+.banner-text p{
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;  
+    color: rgb(0, 0, 1);
+    text-shadow: #000;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgb(0, 0, 0);
+    border: .5px solid rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    transition: color 0.5;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(19, 3, 255);
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+
+}
+.banner-btn a:hover{
+    color: rgb(0, 0, 0);
+
+    
+
+}
+
+/* Menu Section */
+#menu{
+    margin: 34px;
+    display: flex;
+}
+#menu .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#menu .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#menu .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+How To Create a Custom Radio Button
+Example
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #000000;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+
+}
+
+.btn1{
+    padding-bottom: 20px;
+}
+
+.btn1 p{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;  
+    color: rgb(0, 0, 0);
+    text-shadow: #000;
+}
+
+
+</style>
+<body>
+        <div class="banner-text">
+            <h1>ITEM</h1>
+            <div class="banner-btn">
+                <a href="index.html"><span></span>HOME</a>
+                <a href="info.html"><span></span>INFO</a>
+                <a href="about.html"><span></span>ABOUT</a>
+                <a href="feedback.html"><span></span>FEEDBACK</a>
+                <a href="https://api.whatsapp.com/send?phone=601112046916&text=Hi!%20I%20want%20to%20order%20gym%20item.">CONTACT US</a><br>
+
+            </div>
+            <section id="menu-container">
+                <h2 class="h-primary center">FITNESS ITEM</h2>
+                <div id="menu">
+                    <div class="box">
+                        <img src="dumbell.jpg" alt="">
+                        <h2 class="h-secondary center">dumbell set</h2>
+                        <p class="center"> MCFIT Dumbbell Set 10/15/20kg Dumbell Bumper Rubber Coated + 40CM Foam Connector Gym Home Fitness 
+                           <p> Option 1:  
+                            The Set 10kg Dumbbell (5kg x 2 dumbbell) 
+                            Includes:
+                            Discs: 4 x 1.25kg / 4 x 1.00kg
+                            Safety Spinlock Nut: 4
+                            32cm Dumbbell Pole : 2
+                            FREE Connector: 1
+                            Connector Size : 7cm
+                            
+                            <p>Option 2:
+                            10kg Hexagon Dumbbell  (Non Adjustable)
+                            5kg x 2 pcs
+                            
+                            <p>Option 3:
+                            10kg Kettle bell x 1 pc</p>
+                    </div>
+                    <div class="box">
+                        <img src="treadmill.jpg" alt="">
+                        <h2 class="h-secondary center">treadmill</h2>
+                        <p class="center">Walking Treadmill WalkingPad Treadmill Smart Walking Pad Fitness Walking Machine for Indoor Running Walking 
+                            <p>Highlight
+
+                              •Strong load capacity
+                              •Large screen LED
+                              •Wireless remote control
+                              •Ultra-thin body
+                              •No installation required
+                              •Noise Reduction
+                              
+                              <p>Features
+                              
+                              Remote control- Control your speed by remote control, Wireless hand-held remote control.
+                              Space Saving- Easy to store & perfect for small space home and office
+                              
+                              <p>Specification
+                              
+                              Running Area: 100 x 40 cm
+                              Voltage: AC110V ~ 50Hz 
+                              Product Dimension: 121 x 48.5 x 12.5cm
+                              Product Weight: 37 kg 
+                              Maximum Load: 100kg </p>
+                    </div>
+                    <div class="box">
+                        <img src="smith.jpg" alt="">
+                        <h2 class="h-secondary center">smith machine</h2>
+                        <p class="center">BPS Multifunction Smith Machine Chin Up Dip Tower Station Squat Rack Weight Lifting Station Home Gym Fitness YL-D50 
+                        <p>Description:
+                          •High-grade steel construction
+
+                          •Customizable incremental 
+                          height adjustments for bar holders
+                          
+                          *Safeties and a barbell catch 
+                          for a safe workout
+                          
+                          •Quick-change design for more 
+                          effective weight swapping
+                          
+                          •Appropriate for Standard as 
+                          well as Olympic barbells
+                          
+                          •With multi Chin Up Workout Bar
+                          
+                          •Simple assembly required
+                          
+                          •Great for Barbell Owners, Gym Enthusiasts
+                          
+                          This is a Squat Rack Station that
+                           is designed to allow you to work 
+                           out at home without a spotter, 
+                           push yourself to success and have
+                            the security that you will not get injured.</p>
+                    </div>
+                </section>
+                </div>
+        </div>
+        <div class="btn1">
+        <center>
+
+            <p> What would you like to purchase ?</p>   
+        
+        <input type="checkbox" value="dumbell set">dumbell set
+            
+        <input type="checkbox" value="treadmill">treadmill
+            
+          
+        <input type="checkbox" value="smith machine">smith machine
+
+        
+        <br>
+          </center>
+        </div> 
+
+</body>
+</html>
